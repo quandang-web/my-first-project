@@ -1,0 +1,16 @@
+# Nhật ký Prompt - Module điều hướng an toàn
+
+## Nội dung trao đổi với AI
+- **Câu hỏi 1:** Tại sao nên dùng `<ul>` thay vì `<div>` cho menu?
+  - *Kết luận:* `<ul>` giúp Screen Reader đọc cấu trúc danh sách, tăng tính tiếp cận (Accessibility) và chuẩn SEO.
+- **Câu hỏi 2:** Chiến lược Git nào an toàn nhất để tránh hỏng trang chính?
+  - *Kết luận:* Sử dụng `git checkout -b feature/nav-menu` để tách biệt luồng code, tránh rủi ro trực tiếp lên nhánh `main`.
+- **Câu hỏi 3:** Cách xử lý Merge Conflict khi gộp nhánh?
+  - *Kết luận:* Xử lý thủ công bằng cách xóa các thẻ đánh dấu xung đột (`<<<<`, `====`, `>>>>`) và chọn đoạn code đúng.
+
+## Quy trình Git đã thực hiện
+1. `git init` (Khởi tạo).
+2. `git commit -m "Khởi tạo trang chủ chiến dịch"` (Lưu mốc nhánh main).
+3. `git checkout -b feature/nav-menu` (Tách nhánh).
+4. `git commit -m "feat: add navigation menu using ul and li"` (Lưu mốc tính năng).
+5. `git checkout main` và `git merge feature/nav-menu` (Hợp nhất).
