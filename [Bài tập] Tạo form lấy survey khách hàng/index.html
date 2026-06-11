@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Survey</title>
+</head>
+
+<body>
+
+    <h2>Customer Survey Form</h2>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>Thông tin khách hàng</legend>
+
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập họ tên">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            <br><br>
+
+            <label for="age">Tuổi:</label>
+            <input type="number" id="age" name="age" min="10" max="100">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Đánh giá dịch vụ</legend>
+
+            <p>Bạn biết đến chúng tôi qua đâu?</p>
+
+            <input type="radio" id="fb" name="source" value="facebook">
+            <label for="fb">Facebook</label><br>
+
+            <input type="radio" id="gg" name="source" value="google">
+            <label for="gg">Google</label><br>
+
+            <input type="radio" id="friend" name="source" value="friend">
+            <label for="friend">Bạn bè giới thiệu</label><br>
+
+            <input type="radio" id="ads" name="source" value="ads">
+            <label for="ads">Quảng cáo</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Mức độ hài lòng</legend>
+
+            <label>
+                <input type="radio" name="rating" value="1"> 1 - Rất tệ
+            </label><br>
+
+            <label>
+                <input type="radio" name="rating" value="2"> 2
+            </label><br>
+
+            <label>
+                <input type="radio" name="rating" value="3"> 3 - Bình thường
+            </label><br>
+
+            <label>
+                <input type="radio" name="rating" value="4"> 4
+            </label><br>
+
+            <label>
+                <input type="radio" name="rating" value="5"> 5 - Rất hài lòng
+            </label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Góp ý</legend>
+
+            <textarea name="feedback" rows="5" cols="40" placeholder="Nhập góp ý của bạn..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Đăng ký nhận thông tin</legend>
+
+            <input type="checkbox" id="news" name="news">
+            <label for="news">Nhận email khuyến mãi</label>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Gửi khảo sát</button>
+
+    </form>
+
+</body>
+
+</html>

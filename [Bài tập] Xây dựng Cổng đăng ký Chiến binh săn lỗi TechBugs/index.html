@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TechBugs - Đăng ký săn lỗi</title>
+</head>
+
+<body>
+
+    <h2>Đăng ký tham gia săn lỗi</h2>
+
+    <form action="" method="GET">
+
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nhập tên" required>
+            <br><br>
+
+            <label for="email">Email liên hệ:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+            <br><br>
+
+            <label for="password">Mật khẩu hệ thống:</label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="Nhập mật khẩu" required>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Trình độ của bạn</legend>
+
+            <input type="radio" id="level1" name="level" value="Newbie">
+            <label for="level1">Mới tập chơi</label>
+
+            <input type="radio" id="level2" name="level" value="Pro">
+            <label for="level2">Chuyên nghiệp</label>
+
+            <input type="radio" id="level3" name="level" value="Expert">
+            <label for="level3">Cao thủ</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Nền tảng yêu thích</legend>
+
+            <input type="checkbox" id="web" name="platform" value="Web">
+            <label for="web">Web</label>
+
+            <input type="checkbox" id="mobile" name="platform" value="Mobile">
+            <label for="mobile">Mobile App</label>
+
+            <input type="checkbox" id="ai" name="platform" value="AI">
+            <label for="ai">AI / Data</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Lý do tham gia</legend>
+
+            <textarea id="reason" name="reason" placeholder="Viết lý do của bạn..." required></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Đăng ký ngay</button>
+
+    </form>
+
+</body>
+
+</html>

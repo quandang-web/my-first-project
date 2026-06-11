@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TechBugs Hackathon 2026</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background: #f2f2f2;
+        }
+
+        tfoot {
+            background: #ddd;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 600px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>TechBugs Hackathon 2026</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#schedule">Lịch trình</a></li>
+                <li><a href="#register">Đăng ký</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home">
+            <h2>Giới thiệu</h2>
+            <p>Sự kiện Hackathon dành cho các lập trình viên trẻ đam mê công nghệ và sáng tạo.</p>
+        </section>
+
+        <!-- SCHEDULE -->
+        <section id="schedule">
+            <h2>Lịch trình sự kiện</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Thời gian</th>
+                        <th>Sự kiện</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Ngày 1</td>
+                        <td>08:00 - 09:00</td>
+                        <td>Khai mạc</td>
+                    </tr>
+
+                    <tr>
+                        <td>09:00 - 12:00</td>
+                        <td>Hackathon bắt đầu</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:00 - 17:00</td>
+                        <td>Workshop kỹ thuật</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Ngày 2</td>
+                        <td>08:00 - 11:00</td>
+                        <td>Tiếp tục dự án</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:00 - 16:00</td>
+                        <td colspan="2">Chung kết & Trao giải</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- REGISTER -->
+        <section id="register">
+            <h2>Đăng ký đội thi</h2>
+
+            <form action="#" method="GET">
+
+                <fieldset>
+                    <legend>Thông tin đội</legend>
+
+                    <label for="team">Tên đội:</label>
+                    <input type="text" id="team" name="team" required>
+                    <br><br>
+
+                    <label for="email">Email liên hệ:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hạng thi đấu</legend>
+
+                    <input type="radio" id="beginner" name="level" value="Beginner">
+                    <label for="beginner">Beginner</label>
+
+                    <input type="radio" id="pro" name="level" value="Pro">
+                    <label for="pro">Pro</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kỹ năng</legend>
+
+                    <input type="checkbox" id="web" name="skill" value="Web">
+                    <label for="web">Web</label>
+
+                    <input type="checkbox" id="ai" name="skill" value="AI">
+                    <label for="ai">AI</label>
+
+                    <input type="checkbox" id="mobile" name="skill" value="Mobile">
+                    <label for="mobile">Mobile</label>
+                </fieldset>
+
+                <button type="submit">Đăng ký</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background:#111; color:white; text-align:center; padding:10px;">
+        © 2026 TechBugs Hackathon
+    </footer>
+
+</body>
+
+</html>

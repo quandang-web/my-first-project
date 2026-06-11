@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SkyWay Booking System</title>
+</head>
+
+<body>
+
+    <h2>Đặt vé máy bay SkyWay</h2>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>Thông tin khách hàng</legend>
+
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ tên">
+            <br><br>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="VD: 0912345678">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            <br><br>
+
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Nam</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Nữ</label>
+
+            <br><br>
+
+            <label for="flight_date">Ngày bay:</label>
+            <input type="date" id="flight_date" name="flight_date" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Thông tin chuyến bay</legend>
+
+            <label for="flight">Chọn chuyến bay:</label>
+            <select id="flight" name="flight" required>
+                <option value="">-- Chọn chuyến bay --</option>
+                <option>VN123 - Hà Nội → TP.HCM</option>
+                <option>VJ456 - Hà Nội → Đà Nẵng</option>
+                <option>QH789 - TP.HCM → Phú Quốc</option>
+                <option>VN321 - Đà Nẵng → Hà Nội</option>
+            </select>
+
+            <br><br>
+
+            <label for="seat">Hạng ghế:</label>
+            <select id="seat" name="seat" required>
+                <option value="">-- Chọn hạng ghế --</option>
+                <option>Phổ thông</option>
+                <option>Thương gia</option>
+                <option>Hạng nhất</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Gửi đặt vé</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Lịch bay hôm nay</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Mã chuyến</th>
+                <th>Hành trình</th>
+                <th>Giờ bay</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">VN123</td>
+                <td rowspan="2">Hà Nội - TP.HCM</td>
+                <td>08:00</td>
+                <td>Đúng giờ</td>
+            </tr>
+
+            <tr>
+                <td>12:00</td>
+                <td>Đúng giờ</td>
+            </tr>
+
+            <tr>
+                <td>VJ456</td>
+                <td>Hà Nội - Đà Nẵng</td>
+                <td colspan="2">ĐÃ HỦY CHUYẾN BAY</td>
+            </tr>
+
+            <tr>
+                <td>QH789</td>
+                <td>TP.HCM - Phú Quốc</td>
+                <td>09:30</td>
+                <td>Đúng giờ</td>
+            </tr>
+
+            <tr>
+                <td>VN321</td>
+                <td>Đà Nẵng - Hà Nội</td>
+                <td>14:00</td>
+                <td>Trễ 15 phút</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Tổng số chuyến bay: 4</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

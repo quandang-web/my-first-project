@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BurgerTech Kiosk</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        form,
+        #cartArea {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li:hover {
+            background: #f5f5f5;
+        }
+
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🍔 BurgerTech Kiosk</h2>
+
+    <form id="orderForm">
+        <input type="text" id="foodName" placeholder="Tên món ăn" required>
+        <input type="number" id="foodPrice" placeholder="Giá tiền" required>
+        <button type="submit">Thêm vào giỏ</button>
+    </form>
+
+    <div id="cartArea">
+        <ul id="cartList"></ul>
+        <h3>Tổng tiền: <span id="totalPrice">0</span> VNĐ</h3>
+        <button id="checkoutBtn">Thanh toán (Enter)</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

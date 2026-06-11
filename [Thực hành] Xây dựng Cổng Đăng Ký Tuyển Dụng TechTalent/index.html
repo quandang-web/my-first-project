@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TechTalent - Form Tuyển Dụng</title>
+</head>
+
+<body>
+
+    <h2>Đăng ký ứng tuyển TechTalent</h2>
+
+    <form action="#" method="POST">
+
+        <!-- Thông tin cá nhân -->
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Nam</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Nữ</label>
+            <br><br>
+
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+
+        </fieldset>
+
+        <!-- Thông tin chuyên môn -->
+        <fieldset>
+            <legend>Thông tin chuyên môn</legend>
+
+            <label for="position">Vị trí ứng tuyển:</label>
+            <select id="position" name="position" required>
+                <option value="">-- Chọn vị trí --</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+                <option>QA Engineer</option>
+            </select>
+            <br><br>
+
+            <label for="salary">Mức lương mong muốn:</label>
+            <input type="range" id="salary" name="salary" min="5" max="50">
+            <br><br>
+
+            <label for="cv">Upload CV (PDF):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Gửi Hồ Sơ</button>
+
+    </form>
+
+</body>
+
+</html>
